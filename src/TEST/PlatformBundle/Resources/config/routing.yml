@@ -1,0 +1,11 @@
+test_platform_homepage:
+    path:     /
+    defaults: { _controller: TESTPlatformBundle:Photo:index }
+
+test_platform_view:
+    path:       /{soc_name}/{title}/fichier.{ext}
+    defaults:   { _controller: TESTPlatformBundle:Photo:view }
+
+test_platform_addPhoto:
+    path:       /add
+    defaults:   { _controller: TESTPlatformBundle:Photo:addFormular }
